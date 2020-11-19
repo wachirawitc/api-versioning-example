@@ -4,7 +4,7 @@ namespace ApiVersioningExample.Controllers.V2
 {
     [ApiVersion("2.0")]
     [ApiController]
-    [Route("[controller]")]
+    [Route("v{version:apiVersion}/[controller]")]
     public class ExampleController : ControllerBase
     {
         [HttpGet]

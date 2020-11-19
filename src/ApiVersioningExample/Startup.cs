@@ -26,7 +26,7 @@ namespace ApiVersioningExample
                 options.ReportApiVersions = true;
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.DefaultApiVersion = new ApiVersion(1, 0);
-                options.ApiVersionReader = new HeaderApiVersionReader("Version");
+                options.ApiVersionReader = new UrlSegmentApiVersionReader();
             });
         }
 
